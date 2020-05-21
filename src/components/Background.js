@@ -7,7 +7,10 @@ const Background = props => {
 };
 
 export default styled(Background)`
+  width: 100%;
   height: 100%;
+  position: absolute;
+  z-index: -1;
   background: url(${props => props.image}) no-repeat center center fixed;
   background-size: cover;
 `;
