@@ -5,9 +5,11 @@ const Weather = props => {
   const { className } = props;
   return (
     <div className={className}>
-      <WeatherCard className="weather-card" />
-      <WeatherCard className="weather-card" />
-      <WeatherCard className="weather-card" />
+      <WeatherCard
+        className="weather-card"
+        city="San Francisco"
+        weather="Sunny"
+      />
     </div>
   );
 };

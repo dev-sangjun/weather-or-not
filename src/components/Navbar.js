@@ -9,12 +9,7 @@ const Navbar = props => {
   return (
     <nav className={className}>
       <Logo>W/N</Logo>
-      <NavItems>
-        <SearchBox className="search-box" />
-        <Link to="/">
-          <MdFavorite />
-        </Link>
-      </NavItems>
+      <NavItems></NavItems>
     </nav>
   );
 };
@@ -28,12 +23,6 @@ const NavItems = styled.ul`
   list-style: none;
   display: flex;
   align-items: center;
-  a {
-    width: 1.5rem;
-    height: 1.5rem;
-    font-size: 1.5em;
-    color: white;
-  }
 `;
 
 export default styled(Navbar)`
@@ -44,7 +33,4 @@ export default styled(Navbar)`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  .search-box {
-    margin-right: 0.5rem;
-  }
 `;

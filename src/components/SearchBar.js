@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { MdSearch } from "react-icons/md";
 
-const SearchBox = props => {
+const SearchBar = props => {
   const { className } = props;
   return (
     <div className={className}>
@@ -26,7 +26,7 @@ const SearchInput = styled.input`
   }
 `;
 
-export default styled(SearchBox)`
+export default styled(SearchBar)`
   height: 2rem;
   display: flex;
   align-items: center;

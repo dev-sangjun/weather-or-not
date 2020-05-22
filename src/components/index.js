@@ -1,5 +1,5 @@
 import Background from "./Background";
 import Navbar from "./Navbar";
-import SearchBox from "./SearchBox";
+import SearchBar from "./SearchBar";
 import WeatherCard from "./WeatherCard";
-export { Background, Navbar, SearchBox, WeatherCard };
+export { Background, Navbar, SearchBar, WeatherCard };
