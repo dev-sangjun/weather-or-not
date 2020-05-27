@@ -1,4 +1,4 @@
 import Search from "./Search";
-import Weather from "./Weather";
+import Favorites from "./Favorites";
 
-export { Search, Weather };
+export { Search, Favorites };
