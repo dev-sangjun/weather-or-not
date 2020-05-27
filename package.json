@@ -2,6 +2,10 @@
   "name": "weather-or-not",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "npm": "6.13.4",
+    "node": "12.16.1"
+  },
   "homepage": "https://ohyeyoye.github.io/weather-or-not",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
