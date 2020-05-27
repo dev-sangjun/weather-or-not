@@ -134,7 +134,8 @@ export default styled(WeatherCard)`
       flex-direction: column;
       text-align: center;
       span:first-child {
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid
+          ${props => getWeatherColor(props.weather.temp).text};
         padding-bottom: 0.25rem;
         margin-bottom: 0.25rem;
       }
