@@ -39,19 +39,21 @@ const Navbar = props => {
   );
 };
 
-const Logo = styled.div`
-  color: white;
+const Logo = styled.h2`
+  font-size: 1em;
 `;
 
 export default styled(Navbar)`
   width: 100%;
   padding: 0.5rem;
-  color: white;
   margin-bottom: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   user-select: none;
+  * {
+    font-family: "Josefin Sans", sans-serif;
+  }
   .degree-container {
     .degree {
       color: rgba(150, 150, 150);
@@ -60,7 +62,7 @@ export default styled(Navbar)`
       }
     }
     .degree-selected {
-      color: white;
+      color: black;
       &:hover {
         cursor: default;
       }

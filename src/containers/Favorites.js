@@ -69,12 +69,11 @@ export default styled(Favorites)`
   min-height: 15rem;
   /* background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px); */
-  padding: 1rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
-  color: white;
   .empty-msg {
-    color: rgba(255, 255, 255, 0.8);
+    color: gray;
     margin: 1rem 0 0 1rem;
   }
   .weather-card-container {
@@ -82,17 +81,22 @@ export default styled(Favorites)`
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    justify-content: flex-start;
     flex-flow: row wrap;
     height: 15rem;
     max-height: 26rem;
-    overflow-y: scroll;
-    background-color: rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
-    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    overflow: auto;
+    background-color: #f5f5f9;
+    border-radius: 1rem;
     .weather-card {
-      flex: calc(25% - 1rem);
-      max-width: calc(25% - 1rem);
+      flex: calc(50% - 1rem);
+      max-width: calc(50% - 1rem);
+      @media (max-width: 640px) {
+        flex: 1;
+        max-width: 100%;
+      }
     }
   }
 `;

@@ -81,7 +81,7 @@ const WeatherCard = props => {
 };
 
 const Title = styled.div`
-  font-size: 1.8em;
+  font-size: 1.3em;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -93,16 +93,20 @@ export default styled(WeatherCard)`
   position: relative;
   overflow: hidden;
   user-select: none;
-  width: 15rem;
+  width: 100%;
+  min-width: 13rem;
   margin: 0.5rem;
-  height: 12rem;
+  height: 15rem;
   color: ${props => getWeatherColor(props.weather.temp).text};
-  border-radius: 0.25rem;
-  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
-  background-color: ${props => getWeatherColor(props.weather.temp).bg};
+  border-radius: 0.75rem;
+  border: 8px solid ${props => getWeatherColor(props.weather.temp).bg};
+  background-color: white;
   .top-container {
     display: flex;
     flex-direction: column;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    overflow: hidden;
     .city-icon-container {
       display: flex;
       justify-content: space-between;
@@ -110,8 +114,8 @@ export default styled(WeatherCard)`
       height: 3rem;
       padding: 0.5rem 1rem;
       .weather-icon {
-        min-width: 3rem;
-        min-height: 3rem;
+        min-width: 2.5rem;
+        min-height: 2.5rem;
       }
     }
     .date-text {
@@ -147,6 +151,9 @@ export default styled(WeatherCard)`
     justify-content: center;
     align-items: center;
     margin-bottom: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    overflow: hidden;
     .description {
       font-size: 1.2em;
       overflow: hidden;
@@ -161,12 +168,13 @@ export default styled(WeatherCard)`
     background-color: white;
     color: #38619d;
     padding: 0.5rem;
+    transition: all 100ms ease-in-out;
     .favorite-icon {
       font-size: 1.5em;
-      color: ${props => getWeatherColor(props.weather.temp).bg};
+      color: #fa826b;
     }
     &:hover {
-      background-color: lightgray;
+      background-color: #f0f0f0;
       cursor: pointer;
     }
   }

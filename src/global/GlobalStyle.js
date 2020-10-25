@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
   * {
-    font-family: "Josefin Sans", sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
   .blur {
     filter: blur(0.125rem);

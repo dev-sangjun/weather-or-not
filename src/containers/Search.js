@@ -95,6 +95,7 @@ export default styled(Search)`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  padding: 2rem;
   .search-top-container {
     position: absolute;
     z-index: 2;
@@ -107,18 +108,20 @@ export default styled(Search)`
   .search-result {
     width: 100%;
     height: 20rem;
+    margin-top: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
     .greeting-msg {
-      padding: 1rem;
-      color: white;
-      font-size: 3em;
-      animation: ${animations.fadeIn} 3s forwards;
+      font-size: 2.5em;
+      animation: ${animations.fadeIn} 2s forwards;
+      @media (max-width: 640px) {
+        font-size: 2em;
+      }
     }
   }
   .search-bar {
     width: 70%;
-    margin-right: 1rem;
   }
 `;
